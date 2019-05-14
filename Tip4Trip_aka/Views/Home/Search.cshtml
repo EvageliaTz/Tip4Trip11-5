@@ -4,8 +4,7 @@
     ViewBag.Title = "Searching";
 }
 
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/Content/css" />
 
 
 @model Tip4Trip_aka.ViewModels.HousesDates
@@ -19,6 +18,7 @@
 </style>
 @using (Html.BeginForm("Search", "Home", FormMethod.Get))
 {
+    <div class="modal-body">
     <div class="center">
         @Html.TextBox("searching", null, new { @class = "form-control", @placeholder = "Search With Location Name" })
         @Html.TextBox("Address", null, new { @class = "form-control", @placeholder = "Search With Address" })
@@ -26,6 +26,7 @@
 
         @Html.TextBox("Enddate", null, new { @class = "form-control", @placeholder = "Search With End Date" })
         <input type="submit" value="T4Trip Search" />
+    </div>
     </div>
 }
 

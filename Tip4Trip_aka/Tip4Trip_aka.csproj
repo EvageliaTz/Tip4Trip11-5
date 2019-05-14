@@ -227,8 +227,13 @@
     <Compile Include="Migrations\201905102029384_newn2.Designer.cs">
       <DependentUpon>201905102029384_newn2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905131828590_trit.cs" />
+    <Compile Include="Migrations\201905131828590_trit.Designer.cs">
+      <DependentUpon>201905131828590_trit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\House.cs" />
     <Compile Include="Models\HouseImage.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -261,6 +266,7 @@
     <Content Include="Content\Images\Slide-4.jpg" />
     <Content Include="Content\Images\tip-4-trip-logo.png" />
     <Content Include="Content\Images\tip-4-trip.png" />
+    <Content Include="Content\Images\tip-4-trip2.png" />
     <Content Include="Content\Images\vacation_time-1494435.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -469,6 +475,7 @@
     <Content Include="Views\Home\MyTrip.cshtml" />
     <Content Include="Views\Home\t4t.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Houses\T4T.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -505,6 +512,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905102029384_newn2.resx">
       <DependentUpon>201905102029384_newn2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905131828590_trit.resx">
+      <DependentUpon>201905131828590_trit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

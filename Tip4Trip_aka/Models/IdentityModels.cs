@@ -40,6 +40,7 @@ namespace Tip4Trip_aka.Models
         
         public DbSet<Location> Locations { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
         public static ApplicationDbContext Create()
         {

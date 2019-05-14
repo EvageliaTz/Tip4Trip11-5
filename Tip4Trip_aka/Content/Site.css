@@ -65,12 +65,20 @@ textarea {
     border-radius: 0px;
     border: 0px;
 }
+.image-about-back {
+    background-image: url("/content/images/tip-4-trip2.png");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+}
 .card{
     min-width: 200px !important;
 }
 
 .main-back-img {
-    background-image: url("http://localhost:50894/content/images/vacation_time-1494435.jpg");
+    background-image: url("/content/images/vacation_time-1494435.jpg");
     height: 2000px;
     width: 100%;
     /* Create the parallax scrolling effect */
@@ -80,7 +88,7 @@ textarea {
     background-size: cover;
 }
 .image-mytrip-link {
-    background: url("http://localhost:50894/content/images/tip-4-trip.png") no-repeat;
+    background: url("/content/images/tip-4-trip.png") no-repeat;
     background-size: 50px 50px;
     border-style: none;
     width: 50px;
@@ -152,6 +160,14 @@ textarea {
 
 #footer {
     background-color: teal;   
+}
+
+.navbar {
+    border-bottom: teal 2px solid;
+    opacity: 0.8;
+}
+#contact-form input[type=text], #contact-form input[type=email]{
+    max-width: none;
 }
 /* Hamburger Mobile Style*/
 .animated-icon1, .animated-icon2, .animated-icon3 {

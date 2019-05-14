@@ -51,9 +51,20 @@ namespace Tip4Trip_aka.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Contact([Bind(Include = "Id,Name,Email,Subject,Message")] Contact contact)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Contacts.Add(contact);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(contact);
         }
         public ActionResult Search(string searching, string Address, DateTime? Sstartdate, DateTime? Enddate)
         {

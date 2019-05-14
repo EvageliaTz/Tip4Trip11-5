@@ -105,6 +105,12 @@ namespace Tip4Trip_aka.Controllers
             { return Content("Wrong Id , Try again"); }
         }
 
+
+        public ActionResult T4T()
+        {
+            return View();
+        }
+
         // GET: Houses/Details/5
         public ActionResult Details(int? id)
         {
@@ -171,7 +177,7 @@ namespace Tip4Trip_aka.Controllers
             ViewBag.LocationId = new SelectList(db.Locations, "Id", "NameCity", house.LocationId);
             return View(house);
         }
-
+        
         // POST: Houses/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
